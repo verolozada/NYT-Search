@@ -6,19 +6,24 @@ var apiKey = "sampleAPIKey."
 
 // variable to hold the search string
 var searchTerm = "";
-var searchTermElement = ".search-term";
+var searchTermElement = "#searchBox1"";
 
 // record count limiter
 var recordLimiter = 5;
-var recordLimiterElement = "record-limiter";
+var recordLimiterElement = "#searchBox2";
 
 // search limit start year
 var startYear = "2016";
-var startYearElment = ".start-year";
+var startYearElment = "#searchBox3";
 
 // search limit end year
 var endYear = "2016";
-var endYearElement = ".end-year";
+var endYearElement = "#searchBox4";
+
+var searchButtonElement = "#searchBtn";
+var clearButtonElement = "#clear";
+
+var articleDivElement = "#topArticles";
 
 
 
@@ -30,7 +35,17 @@ function assembleUrl () {
     return searchUrl
 }
 
-$(".search-button").on("click", function () {
+function addArticle(articleText){
+    $(articleDivElement).apppend(articleText);
+}
+
+$(searchButtonElement).on("click", function () {
 
 
 });
+
+$(clearButtonElement).on("click", function () {
+
+
+});
+
