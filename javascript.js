@@ -7,7 +7,7 @@ $(document).ready(function(){
     
     // variable to hold the search string
     var searchTerm = "raptors" ;
-    var searchTermElement = ".search-term";
+    var searchTermElement = "#search-term";
     
     // record count limiter
     var recordLimiter = 5;
@@ -15,19 +15,19 @@ $(document).ready(function(){
     
     // search limit start year
     var startYear = "";
-    var startYearElement = ".start-year";
+    var startYearElement = "#start-year";
     
     // search limit end year
     var endYear = "";
-    var endYearElement = ".end-year";
+    var endYearElement = "#end-year";
     
     
-    $('#bodyImage').append(
-        `
-        <button id="search-button" style="width: 75px; height: 30px;">Search</button>
+    // $('#bodyImage').append(
+    //     `
+    //     <button id="search-button" style="width: 75px; height: 30px;">Search</button>
     
-        `
-    )
+    //     `
+    // )
     
     function assembleUrl () {
        
@@ -80,7 +80,7 @@ $(document).ready(function(){
             throw err;
           });
     
-          $('.search-term').empty()
+       
         
     
     });
