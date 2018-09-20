@@ -1,27 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap CSS -->
-    
-  </head>
-  <body>
-      <div id="test"></div>
-  
-  </body>
-</html><!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   
     crossorigin="anonymous"></script>
@@ -36,15 +23,45 @@
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Ewert|Faster+One|Frijole|Fugaz+One|Monoton|Nosifer|Press+Start+2P|Shojumaru|Sree+Krushnadevaraya"
     rel="stylesheet">
  
-
 </head>
 
-<body id="bodyImage">
-<input type="text" class="start-year">
-<input type="text" class="end-year">
-<input type="text" class="search-term">
+<body>
+    <header id="header">
+        <i class="fa fa-newspaper-o" aria-hidden="true"> NEW YORK TIMES SEARCH</i>
+    </header>
 
- 
+    <div class="container">
+        <div id="searchP">Search Parameters</div>
+        <!-- <div id="search"> -->
+        <div id="searchTerm">
+            <br>Search Term
+            <br>
+            <br>
+            <input id="searchBox1" type="text" name="search">
+        </div>
+        <!-- </div> -->
+    </div>
+
+
+
+    <!-- big div container
+        id for search term: searchTerm 
+        id for search box: searchBox1
+        id for number of records to retrieve: numberRecords
+        id for number of records box: searchBox2   (list)
+        id Start Year: year
+        id for start year box: searchBox3
+        id End Year: endYear
+        id for end year box: searchBox4
+
+        for buttons:
+        id for search button: searchBtn
+        id for clear results: clear
+
+        top articles:
+        another div id: topArticles
+ -->
+
 
 </body>
 
