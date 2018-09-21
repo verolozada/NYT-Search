@@ -30,7 +30,7 @@ $(document).ready(function(){
     // )
     
     function assembleUrl () {
-       
+        var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?"
      //input verification search
         searchTerm = searchTerm.replace(" ","+")
     
@@ -50,9 +50,7 @@ $(document).ready(function(){
     
     //set URL string including eligible dates
         url = 
-        `
-        ${url}&query=${searchTerm}${startYear}${endYear}&api-key=${apiKey}
-        `
+        `${url}&query=${searchTerm}${startYear}${endYear}&api-key=${apiKey}`
     
         
     
@@ -73,6 +71,7 @@ $(document).ready(function(){
             url: assembleUrl(),
             method: 'GET',
           }).done(function(response) {
+              console.log(response)
             console.log(response.response.docs[0].headline);
             console.log(response.response.docs[0].web_url);
         
